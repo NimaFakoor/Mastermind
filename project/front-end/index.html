@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Nima Fakoor">
+
+  <title>MasterMind</title>
+
+  <link rel="stylesheet" href="./Content/style/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1 id="TitleWeb">مغز متفکر</h1>
+            <p id="contadorIntentos">تلاش ها: </p>
+        </div>
+        <div>
+            <p id="titleAuthor">Nima Fakoor</p>
+            <p id="titleDesarrolloWeb">Co-Op Sara Zamani</p>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="containerMain">
+            <section id="containerJuego">
+                <div id="containerLeft">
+                    <div id="containerIntento">
+                        <div class="containerIntentoColores">
+                            <div class="circleIntentoColor"></div>
+                            <div class="circleIntentoColor"></div>
+                            <div class="circleIntentoColor"></div>
+                            <div class="circleIntentoColor"></div>
+
+                            <div class="circleEstadoColor"></div>
+                            <div class="circleEstadoColor"></div>
+                            <div class="circleEstadoColor"></div>
+                            <div class="circleEstadoColor"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="containerRight">
+                    <div id="containerEleccionColor">
+                        <div class="colorEleccion" id="CE-rojo"></div>
+                        <div class="colorEleccion" id="CE-blanco"></div>
+                        <div class="colorEleccion" id="CE-negro"></div>
+                        <div class="colorEleccion" id="CE-amarillo"></div>
+                                <!--      
+                        <div class="colorEleccion" id="CE-naranja"></div>
+                        <div class="colorEleccion" id="CE-marron"></div>
+                        <div class="colorEleccion" id="CE-azul"></div>
+                        <div class="colorEleccion" id="CE-verde"></div>
+                                 -->
+                    </div>
+                    <img id="btn-checkColores" src="Content/images/checked.png" alt="check">
+                </div>
+
+            </section>
+            <section>
+                <div id="containerMenuOpciones">
+                    <div id="containerInsideMenuOpciones">
+                        <p id="titleMenuMasterMind">مغز متفکر</p>
+                        <div id="resultadoPartidaMasterMind">
+                            <p id="titleResultadoMenuPartida"></p>
+                            <p id="numeroIntentosMenuPartida"></p>
+                        </div>
+                        <ul>
+                            <li id="btn-Start">بازی جدید</li>
+                            <li id="btn-Salir">برو بیرون</li>
+                        </ul>
+                        <div id="containerRedesSociales">
+                            <a href="https://twitter.com/NimaFakoor" target="_blank" class="redSocial"></a>
+                            <a href="https://www.linkedin.com/in/NimaFakoor/" target="_blank" class="redSocial"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="backgroundMenuOpciones"></div>
+            </section>
+        </div>
+
+    </main>
+
+    <script  src="./Content/scripts/script.js"></script>
+
+</body>
+
+</body>
+</html>

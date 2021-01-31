@@ -1,0 +1,306 @@
+@font-face {
+    font-family: Shabnam;
+    src: url(../fonts/Shabnam/Shabnam.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: Shabnam;
+}
+
+#containerLeft,
+#containerRight {
+    height: 80vh
+}
+
+#TitleWeb {
+    margin: 0px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#contadorIntentos {
+    font-size: 1.2rem;
+}
+
+header {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px;
+}
+
+header div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+header div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
+#titleAuthor {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#titleDesarrolloWeb {
+    font-size: 0.9rem;
+    color: #575757;
+}
+
+#btn-checkColores {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #9CCC65;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#btn-checkColores:hover,
+.colorEleccion:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+#containerOpciones {
+    display: none;
+}
+
+#containerJuego {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+}
+
+#containerRight {
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    box-shadow: -1px 0px 9px -2px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+}
+
+.colorEleccion {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 50%;
+    width: 40px;
+    margin-bottom: 20px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#containerLeft {
+    overflow-y: auto;
+    padding: 20px;
+    height: 84vh;
+}
+
+#containerEleccionColor {
+    margin: 0px 0px 20px 0px;
+    overflow-y: auto;
+    padding: 0px 10px;
+}
+
+#containerLeft::after,
+#containerIntento::after {
+    content: '';
+    height: 50px;
+}
+
+
+/***COLORES**/
+
+#CE-rojo {
+    background: #ff2222;
+}
+
+#CE-blanco {
+    background: #FFF;
+}
+
+#CE-negro {
+    background: #000000;
+}
+
+#CE-amarillo {
+    background: #fffb22;
+}
+
+#CE-naranja {
+    background: #ff7322;
+}
+
+#CE-marron {
+    background: #b96118;
+}
+
+#CE-azul {
+    background: #229cff;
+}
+
+#CE-verde {
+    background: #22ff59;
+}
+
+
+/*********/
+
+.circleIntentoColor {
+    border: 1px solid #b1b1b1;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0px 5px;
+    cursor: pointer;
+    background: #d6d6d6fa;
+}
+
+.circleEstadoColor {
+    border: 1px solid #b1b1b1;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+    background: #d6d6d6fa;
+}
+
+.containerIntentoColores {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/**MENU OPCIONES***/
+
+#containerMenuOpciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transition: all 0.5s;
+}
+
+#containerInsideMenuOpciones ul {
+    list-style: none;
+    width: 70%;
+}
+
+#titleMenuMasterMind {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #363636;
+}
+
+#containerInsideMenuOpciones ul li {
+    text-align: center;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.5s;
+}
+
+#containerInsideMenuOpciones ul li:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+#btn-Start {
+    background: #8BC34A;
+}
+
+#btn-Salir {
+    background: #f83939;
+}
+
+#containerInsideMenuOpciones {
+    background: #FFF;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border-radius: 5px;
+    width: 40%;
+    min-height: 60%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#backgroundMenuOpciones {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background: #000000;
+    opacity: 0.5;
+    left: 0px;
+    transition: all 0.5s;
+}
+
+#containerRedesSociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.redSocial {
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.redSocial img {
+    height: 20px;
+    width: 20px;
+}
+
+#resultadoPartidaMasterMind {
+    margin: 0px 0px 20px 0px;
+}
+
+#titleResultadoMenuPartida {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #8ac44a;
+}
+
+#numeroIntentosMenuPartida {
+    text-align: center;
+    color: #f83a39;
+    margin-top: 10px;
+}
+
+
+/******************/
